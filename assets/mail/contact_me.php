@@ -19,4 +19,6 @@ $header .= "Reply-To: $email";
 
 if(!mail($to, $subject, $body, $header))
   http_response_code(500);
+else(mail($to, $subject, $body, $header))
+  echo "Thank you for contacting me!";
 ?>

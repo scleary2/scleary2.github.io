@@ -17,12 +17,12 @@ $body = "You have received a new message from your website contact form.\n\n"."H
 $header = "From: noreply@scleary2.github.io\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $header .= "Reply-To: $email";	
 
-$successmail =  mail($to, $subject, $body, $header);
+if(!mail($to, $subject, $body, $header))
+  http_response_code(500);
 
-if($successmail){
-  return true;
-}else{
-  return false;
+else{
+  mail($to, "Subject: $subject" , $body, "From: $header");
+
+  echo "Thank you for your feedback";
 }
-
 ?>

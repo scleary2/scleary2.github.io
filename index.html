@@ -462,7 +462,7 @@
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal5Label">Locked Safe</h2>
+                                    id="portfolioModal5Label">Object Detection with YOLOv4-Tiny</h2>
                                 <!-- Icon Divider-->
                                 <div class="divider-custom">
                                     <div class="divider-custom-line"></div>
@@ -470,11 +470,19 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" />
+                                <a href="http://yolo-self-driving.herokuapp.com/">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/github.png" alt="" />
+                                </a>
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-5">The goal of this project was to utilize transfer learning with
+                                    YOLOv4-Tiny to create a real-time object detection model for self-driving vehicles.
+                                    I used the darknet framework to train YOLOv4-Tiny on the Udacity self-driving-cars
+                                    dataset consisting of 15,000 images and ~98,000 labels. Next, I used streamlit and
+                                    heroku
+                                    to host my model for making detections on images. In addition, I wrote a few bash
+                                    scripts to make detections in real-time on video and to make detections based on
+                                    youtube url links. Please follow the link
+                                    to check out my app and github.
                                 </p>
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
